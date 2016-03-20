@@ -1,0 +1,15 @@
+<ion-view view-title="Settings">
+	<ion-content>
+		<ion-toggle class="item" ng-model="langParam.checked" ng-checked="langParam.checked">
+			Switch Language	
+		</ion-toggle>
+		<div class="item">
+			<p>Lang Direction: {{langParam.checked}}</p>
+		</div>
+		<ion-list>
+	      <ion-item ng-click="langChange(langParam.checked)">
+	        Switch
+	      </ion-item>
+	    </ion-list>
+	</ion-content>
+</ion-view>
